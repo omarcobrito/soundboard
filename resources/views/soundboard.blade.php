@@ -23,19 +23,41 @@
 
 
         <div class="row">
-
             <div class="col-md-3 col-xs-6">
                 <audio preload="auto" id="sound1">
                     <source src="/sounds/incrivel.mp3" type="audio/mp3">
                 </audio>
                 <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('sound1').play()">INCRÍVEL!</button>
             </div>
-
             <div class="col-md-3 col-xs-6">
                 <audio preload="auto" id="sound2">
                     <source src="/sounds/last_one.mp3" type="audio/mp3">
                 </audio>
                 <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('sound2').play()">LAST ONE</button>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <audio preload="auto" id="sound3">
+                    <source src="/sounds/sim.mp3" type="audio/mp3">
+                </audio>
+                <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('sound3').play()">SIM</button>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <audio preload="auto" id="sound4">
+                    <source src="/sounds/passo.mp3" type="audio/mp3">
+                </audio>
+                <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('sound4').play()">PASSO...</button>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <audio preload="auto" id="sound5">
+                    <source src="/sounds/sem_condicoes.mp3" type="audio/mp3">
+                </audio>
+                <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('sound5').play()">NÃO HÁ CONDIÇÕES!</button>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <audio preload="auto" id="sound6">
+                    <source src="/sounds/nocao.mp3" type="audio/mp3">
+                </audio>
+                <button type="button" class="btn btn-lg btn-block" onclick="document.getElementById('sound6').play()">NOÇÃO?</button>
             </div>
         </div>
 
@@ -124,5 +146,12 @@ footer .text{
     .btn{
         min-width: min-content;
         outline: 0!important;
+    }
+
+    @media all and (max-width: 758px){
+        .container{
+            height: calc( 100% - 250px );
+            overflow: auto;
+        }
     }
 </style>
